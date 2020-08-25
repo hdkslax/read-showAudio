@@ -1,0 +1,15 @@
+a. The environment my python file is supposed to smoothly work in is Windows.
+
+b. To run my python program, the command is "python Q2.py". Buttons are intuitive by their names.
+
+c. 
+	1. the function name for reading/parsing the input header + data: wav_to_binary(file_path)
+	2. the function for generating the output lie: plot_frames(header, frames, faded_frames, wav_path)
+
+d. the stack of functions called for 
+	c1: wav_to_binary(file_path) <- read_wav()
+	c2: plot_frames(header, frames, faded_frames, wav_path) <- 
+		fade_in_out(frames) <-
+		wav_to_binary(file_path) <-
+		read_wav()
+
